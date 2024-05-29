@@ -149,6 +149,12 @@
                 "description": "Defaults to site description when empty",
                 "visibility": "header_style:[Landing, Search]"
             },
+            "header_description": {
+                "type": "text",
+                "group": "homepage",
+                "description": "To learn more about my story, click <a href='<https://attentioneering.co>'>here</a>",
+                "visibility": "header_style:[Landing, Search]"
+            },
             "background_image": {
                 "type": "boolean",
                 "default": true,

@@ -64,7 +64,9 @@
         {{!-- Landing layout --}}
         {{#match headerStyle "Landing"}}
             <h1 class="gh-header-title is-title">{{#if @custom.header_text}}{{@custom.header_text}}{{else}}{{@site.title}}{{/if}}</h1>
-            <p class="gh-header-description">{{@site.description}}</p>
+            <p class="gh-header-description">
+               To learn more about my story, click <a href='https://attentioneering.co'>here</a>
+            </p>
             {{> "email-subscription" email_field_id="header-email"}}
         {{/match}}
 

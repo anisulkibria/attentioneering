@@ -3368,9 +3368,16 @@ figcaption a {
 /* Custom */
 .gh-header.is-classic .gh-header-title {
     text-align: left;
+    width: 100%;
 }
 
 .gh-header-description {
+    font-family: var(--font-serif-alt);
+    font-size: 23px;
     text-align: left;
     width: 100%;
+}
+
+.gh-header-description a {
+    color: #f15152;
 }
