@@ -82,7 +82,7 @@
         {{#if showSidebar}}
             <aside class="gh-sidebar">
                 <div class="gh-sidebar-inner">
-                    <section class="gh-about">
+                    {{!-- <section class="gh-about">
                         {{#if @site.icon}}
                             <img class="gh-about-icon" src="{{@site.icon}}" alt="{{@site.title}}" loading="lazy">
                         {{/if}}
@@ -108,7 +108,9 @@
                             {{recommendations}}
                             <button data-portal="recommendations">See all {{> "icons/arrow"}}</button>
                         </section>
-                    {{/if}}
+                    {{/if}} --}}
+
+                    {{> components/sidebar}}
                 </div>
             </aside>
         {{/if}}

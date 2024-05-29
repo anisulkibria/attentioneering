@@ -971,6 +971,7 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-title {
+    font-family: var(--font-serif);
     font-size: calc(1.9rem * var(--factor, 1));
     font-weight: 725;
     letter-spacing: -0.014em;
@@ -1867,7 +1868,7 @@ Search                         LOGO                    Login Subscribe
     border-bottom: 1px solid var(--color-border);
 }
 
-.gh-about {
+/* .gh-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1899,7 +1900,7 @@ Search                         LOGO                    Login Subscribe
 
 .gh-about .gh-button {
     margin-top: 32px;
-}
+} */
 
 .gh-recommendations {
     margin-top: 48px;
@@ -3366,6 +3367,11 @@ figcaption a {
 
 
 /* Custom */
+
+.gh-header.is-classic .gh-header-inner {
+    max-width: var(--container-width);
+}
+
 .gh-header.is-classic .gh-header-title {
     text-align: left;
     width: 100%;
@@ -3373,11 +3379,220 @@ figcaption a {
 
 .gh-header-description {
     font-family: var(--font-serif-alt);
-    font-size: 23px;
+    font-size: clamp(1.5rem, .8vw + 1.5rem, 2.5rem);
     text-align: left;
     width: 100%;
 }
 
 .gh-header-description a {
     color: #f15152;
+}
+
+/* Sidebar */
+
+.gh-sidebar {
+    font-family: var(--font-serif-alt);
+}
+
+.gh-sidebar .gh-section+.gh-section {
+    margin-top: 6rem;
+}
+
+.gh-section-title {
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .01em;
+    margin-bottom: 2.4rem;
+    text-transform: uppercase;
+}
+
+.gh-section-title:after {
+    background-color: var(--color-light-gray);
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    margin-left: 1.6rem;
+}
+
+.gh-about {
+    display: flex;
+}
+
+.gh-about-icon {
+    height: 64px;
+    margin-right: 2rem;
+    width: 64px;
+}
+.gh-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gh-about-title {
+    font-family: var(--font-serif);
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: -.02em;
+}
+.gh-about-description {
+    line-height: 1.55;
+    margin-top: .4rem;
+}
+.has-serif-body .gh-about-description {
+    font-family: var(--font-serif-alt);
+}
+.gh-signup {
+    margin-top: 2rem;
+}
+.gh-signup-description {
+    line-height: 1.55;
+}
+
+.gh-subscribe {
+    padding: 7.2rem 0;
+    margin: 12rem 0 8rem;
+    background-color: var(--ghost-accent-color);
+}
+
+.gh-subscribe-inner {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gh-subscribe-title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.has-serif-title .gh-subscribe-title {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+}
+
+.gh-subscribe-description {
+    margin-top: 2rem;
+    font-size: 1.9rem;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.gh-subscribe-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 440px;
+    height: 56px;
+    padding: 0 1.6rem;
+    margin: 2rem auto 0.8rem;
+    font-size: 1.6rem;
+    color: var(--color-secondary-text);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: 6px;
+}
+
+.gh-subscribe .gh-subscribe-input {
+    border: 0;
+}
+
+.gh-subscribe-input:hover {
+    border-color: var(--color-mid-gray);
+    opacity: 1;
+}
+
+.gh-subscribe-input-text {
+    display: flex;
+    align-items: center;
+}
+
+.gh-subscribe-input svg {
+    position: relative;
+    top: 1px;
+    margin-right: 0.8rem;
+}
+
+.gh-subscribe-input-btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--ghost-accent-color);
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}
+
+.gh-subscribe-btn {
+    margin-top: 3.2rem;
+    color: var(--ghost-accent-color);
+    background-color: #fff;
+}
+
+.gh-sidebar .gh-featured {
+    margin-top: 0;
+}
+
+.gh-container .gh-sidebar .gh-feed {
+    gap: 0;
+}
+
+.gh-featured .gh-card + .gh-card {
+    margin-top: 2.8rem;
+}
+
+.gh-featured .gh-card-title {
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.gh-featured .gh-card-excerpt {
+    margin-top: 0.8rem;
+    font-size: inherit;
+    line-height: 1.55;
+    color: var(--color-secondary-text);
+    letter-spacing: 0;
+}
+
+.gh-featured .gh-card-meta {
+    margin-top: 1.6rem;
+}
+
+.gh-sidebar .gh-card-link {
+    display: block;
+}
+
+.gh-container.is-list .no-image .gh-card-link {
+    padding-block: 0;
+}
+
+.gh-topic-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gh-topic-item + .gh-topic-item {
+    margin-top: 1.6rem;
+}
+
+.gh-topic-name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.has-serif-title .gh-topic-name {
+    font-family: var(--font-serif);
+}
+
+.gh-topic-count {
+    padding: 0.4rem 0.8rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 32px;
 }
