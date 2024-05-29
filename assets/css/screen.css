@@ -3363,3 +3363,14 @@ figcaption a {
 .pswp--minimal--dark .pswp__top-bar {
     background: none;
 }
+
+
+/* Custom */
+.gh-header.is-classic .gh-header-title {
+    text-align: left;
+}
+
+.gh-header-description {
+    text-align: left;
+    width: 100%;
+}
