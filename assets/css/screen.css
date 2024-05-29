@@ -3388,6 +3388,12 @@ figcaption a {
     color: #f15152;
 }
 
+.gh-article-tags {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
 /* Sidebar */
 
 .gh-sidebar {
