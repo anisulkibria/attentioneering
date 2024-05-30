@@ -3397,10 +3397,36 @@ figcaption a {
     gap: 1rem;
 }
 
+.gh-subscription-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.gh-header .gh-subscription-form {
+    justify-content: left;
+}
+
 /* Sidebar */
 
 .gh-sidebar {
     font-family: var(--font-serif-alt);
+}
+
+@media (max-width: 767px) {
+    .gh-sidebar {
+        margin-top: 8rem;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .gh-container.has-sidebar .gh-sidebar {
+        display: block;
+        margin-top: 8rem;
+        padding-left: 0;
+    }
 }
 
 .gh-sidebar .gh-section+.gh-section {
